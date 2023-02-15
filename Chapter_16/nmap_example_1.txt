@@ -1,0 +1,40 @@
+donnie@linux-0ro8:~> sudo nmap -A 192.168.0.37
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2017-12-24 19:33 EST
+Nmap scan report for 192.168.0.37
+Host is up (0.00016s latency).
+Not shown: 996 closed ports
+PORT STATE SERVICE VERSION
+22/tcp open ssh OpenSSH 5.1 (protocol 1.99)
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+|_sshv1: Server supports SSHv1
+515/tcp open printer?
+631/tcp open ipp CUPS 1.1
+| http-methods: Potentially risky methods: PUT
+|_See http://nmap.org/nsedoc/scripts/http-methods.html
+| http-robots.txt: 1 disallowed entry
+|_/
+|_http-title: Common UNIX Printing System
+5900/tcp open vnc Apple remote desktop vnc
+| vnc-info:
+| Protocol version: 3.889
+| Security types:
+|_ Mac OS X security type (30)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
+SF-Port515-TCP:V=6.47%I=7%D=12/24%Time=5A40479E%P=x86_64-suse-linux-gnu%r(
+SF:GetRequest,1,"\x01");
+MAC Address: 00:0A:95:8B:E0:C0 (Apple)
+Device type: general purpose
+Running: Apple Mac OS X 10.4.X
+OS CPE: cpe:/o:apple:mac_os_x:10.4.10
+OS details: Apple Mac OS X 10.4.10 - 10.4.11 (Tiger) (Darwin 8.10.0 - 8.11.1)
+Network Distance: 1 hop
+Service Info: OS: Mac OS X; CPE: cpe:/o:apple:mac_os_x
+
+TRACEROUTE
+HOP RTT ADDRESS
+1 0.16 ms 192.168.0.37
+
+OS and Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 213.92 seconds
+donnie@linux-0ro8:~>

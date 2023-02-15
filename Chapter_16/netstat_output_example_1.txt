@@ -1,0 +1,31 @@
+donnie@linux-0ro8:~> netstat -lp -A inet
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address       Foreign Address   State       PID/Program name
+tcp        0      0 *:ideafarm-door     *:*               LISTEN      -
+tcp        0      0 localhost:40432     *:*               LISTEN      3296/SpiderOakONE
+tcp        0      0 *:ssh               *:*               LISTEN      -
+tcp        0      0 localhost:ipp       *:*               LISTEN      -
+tcp        0      0 localhost:smtp      *:*               LISTEN      -
+tcp        0      0 *:db-lsp            *:*               LISTEN      3246/dropbox
+tcp        0      0 *:37468             *:*               LISTEN      3296/SpiderOakONE
+tcp        0      0 localhost:17600     *:*               LISTEN      3246/dropbox
+tcp        0      0 localhost:17603     *:*               LISTEN      3246/dropbox
+udp        0      0 *:57228             *:*                           3376/plugin-contain
+udp        0      0 192.168.204.1:ntp   *:*                           -
+udp        0      0 172.16.249.1:ntp    *:*                           -
+udp        0      0 linux-0ro8:ntp      *:*                           -
+udp        0      0 localhost:ntp       *:*                           -
+udp        0      0 *:ntp               *:*                           -
+udp        0      0 *:58102             *:*                           5598/chromium --pas
+udp        0      0 *:db-lsp-disc       *:*                           3246/dropbox
+udp        0      0 *:43782             *:*                           5598/chromium --pas
+udp        0      0 *:36764             *:*                           -
+udp        0      0 *:21327             *:*                           3296/SpiderOakONE
+udp        0      0 *:mdns              *:*                           5598/chromium --pas
+udp        0      0 *:mdns              *:*                           5598/chromium --pas
+udp        0      0 *:mdns              *:*                           5598/chromium --pas
+udp        0      0 *:mdns              *:*                           -
+raw        0      0 *:icmp              *:*               7           -
+donnie@linux-0ro8:~>

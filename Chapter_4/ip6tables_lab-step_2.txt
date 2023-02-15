@@ -1,0 +1,27 @@
+sudo ip6tables -A INPUT -i lo -j ACCEPT
+sudo ip6tables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+sudo ip6tables -A INPUT -p tcp --dport ssh -j ACCEPT
+sudo ip6tables -A INPUT -p tcp --dport 53 -j ACCEPT
+sudo ip6tables -A INPUT -p udp --dport 53 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 1 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 2 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 3 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 4 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 128 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 129 -j ACCEPT
+sudo ip6tables -A INPUT --protocol icmpv6 --icmpv6-type 130
+sudo ip6tables -A INPUT --protocol icmpv6 --icmpv6-type 131
+sudo ip6tables -A INPUT --protocol icmpv6 --icmpv6-type 132
+sudo ip6tables -A INPUT --protocol icmpv6 --icmpv6-type 143
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 134 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 135 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 136 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 141 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 142 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 148 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 149 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 151 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 152 -j ACCEPT
+sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type 153 -j ACCEPT
+sudo ip6tables -A INPUT -j DROP

@@ -1,0 +1,31 @@
+donnie@linux-0ro8:~> netstat -lpn -A inet
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address      Foreign Address     State       PID/Program name
+tcp        0      0 0.0.0.0:902        0.0.0.0:*           LISTEN      -
+tcp        0      0 127.0.0.1:40432    0.0.0.0:*           LISTEN      3296/SpiderOakONE
+tcp        0      0 0.0.0.0:22         0.0.0.0:*           LISTEN      -
+tcp        0      0 127.0.0.1:631      0.0.0.0:*           LISTEN      -
+tcp        0      0 127.0.0.1:25       0.0.0.0:*           LISTEN      -
+tcp        0      0 0.0.0.0:17500      0.0.0.0:*           LISTEN      3246/dropbox
+tcp        0      0 0.0.0.0:37468      0.0.0.0:*           LISTEN      3296/SpiderOakONE
+tcp        0      0 127.0.0.1:17600    0.0.0.0:*           LISTEN      3246/dropbox
+tcp        0      0 127.0.0.1:17603    0.0.0.0:*           LISTEN      3246/dropbox
+udp        0      0 192.168.204.1:123  0.0.0.0:*                       -
+udp        0      0 172.16.249.1:123   0.0.0.0:*                       -
+udp        0      0 192.168.0.222:123  0.0.0.0:*                       -
+udp        0      0 127.0.0.1:123      0.0.0.0:*                       -
+udp        0      0 0.0.0.0:123        0.0.0.0:*                       -
+udp        0      0 0.0.0.0:17500      0.0.0.0:*                       3246/dropbox
+udp        0      0 0.0.0.0:50857      0.0.0.0:*                       5598/chromium --pas
+udp        0      0 0.0.0.0:43782      0.0.0.0:*                       5598/chromium --pas
+udp        0      0 0.0.0.0:44023      0.0.0.0:*                       10212/plugin-contai
+udp        0      0 0.0.0.0:36764      0.0.0.0:*                       -
+udp        0      0 0.0.0.0:21327      0.0.0.0:*                       3296/SpiderOakONE
+udp        0      0 0.0.0.0:5353       0.0.0.0:*                       5598/chromium --pas
+udp        0      0 0.0.0.0:5353       0.0.0.0:*                       5598/chromium --pas
+udp        0      0 0.0.0.0:5353       0.0.0.0:*                       5598/chromium --pas
+udp        0      0 0.0.0.0:5353       0.0.0.0:*                       -
+raw        0      0 0.0.0.0:1          0.0.0.0:*           7           -
+donnie@linux-0ro8:~>
